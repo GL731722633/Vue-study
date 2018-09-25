@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <counter :count="1" @change="changeNum"></counter>
+        <counter :count="2" @change="changeNum"></counter>
+        <div>{{total}}</div>
+    </div>
+</body>
+</html>
+
+<script>
+    var counter = {
+        props: ['count'],
+        data(){
+            return {
+                number: this.count
+            }
+        },
+        template: `<div @click="handleClick">{{number}}</div>`,
+        methods: {
+            handleClick(){
+                this.number += 2;
+                this.$emit('change',2);
+            }
+        }
+    };
+
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            total: 3
+        },
+        components: {
+            counter: counter
+        },
+        methods: {
+            changeNum(step) {
+                this.total += step;
+            }
+        }
+    })
+</script>

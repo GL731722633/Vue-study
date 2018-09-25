@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="checkboxs">
+    <input type="checkbox">学习
+    <input type="checkbox">运动
+    <input type="checkbox">跑步
+</div>
+<input type="checkbox" id="allChecked" disabled>全选
+
+</body>
+</html>
+
+<script>
+    var checkeboxs = document.querySelectorAll("#checkboxs input");
+    var allChecked = document.querySelector("#allChecked");
+    allChecked.checked = [...checkeboxs].every((item) => {
+        return item.checked;
+    });
+
+    for(var i=0;i<checkeboxs.length;i++) {
+        checkeboxs[i].onclick = function () {
+            allChecked.checked = [...checkeboxs].every((item) => {
+                return item.checked;
+            });
+
+            allChecked.disabled = [...checkeboxs].some((item) => {
+                return !item.checked;
+            })
+            console.log(allChecked.disabled)
+        }
+    }
+</script>

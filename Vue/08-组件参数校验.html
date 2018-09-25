@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <counter :content="1"></counter>
+    </div>
+</body>
+</html>
+
+<script>
+    var counter = {
+        props: {
+            content: {
+                type: Number,
+                required: true,
+                default: 'default Value'
+            }
+        },
+        template: `<div>{{content}}</div>`
+    };
+
+    var vm = new Vue({
+        el: "#app",
+        components: {
+            counter: counter
+        },
+        methods: {
+
+        }
+    })
+</script>

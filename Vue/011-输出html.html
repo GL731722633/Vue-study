@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>Using mustaches: {{ rawHtml }}</p>
+    <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+</div>
+
+</body>
+</html>
+
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            rawHtml: '<p>hello world!</p>'
+        }
+    })
+</script>

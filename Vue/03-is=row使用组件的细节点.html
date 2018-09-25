@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<table id="app">
+    <tbody>
+        <tr is="row"></tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+<script>
+    Vue.component('row',{
+        template: `<tr><td>this is row</td></tr>`
+    });
+
+    var vm = new Vue({
+        el: "#app"
+    })
+</script>

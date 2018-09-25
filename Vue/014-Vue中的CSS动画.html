@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中CSS动画原理</title>
+    <script src="vue.js"></script>
+    <style>
+        .v-enter,
+        .v-leave-to {
+            opacity: 0;
+        }
+        .v-enter-active,
+        .v-leave-active {
+            transition: opacity 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <transition>
+            <p v-if="show">过渡动画显示与隐藏</p>
+        </transition>
+        <button @click="show = !show">过渡效果</button>
+    </div>
+</body>
+</html>
+
+<script>
+
+
+    var vm = new Vue({
+        el: "#root",
+        data: {
+            show: true
+        }
+    })
+</script>

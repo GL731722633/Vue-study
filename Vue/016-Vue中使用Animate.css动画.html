@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中CSS动画原理</title>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="animate/animate.css">
+</head>
+<body>
+    <div id="root">
+        <transition
+            name="fade"
+            enter-active-class="animated bounceIn"
+            leave-active-class="animated fadeOutRight">
+            <p v-if="show">过渡动画显示与隐藏</p>
+        </transition>
+        <button @click="show = !show">过渡效果</button>
+    </div>
+</body>
+</html>
+
+<script>
+    var vm = new Vue({
+        el: "#root",
+        data: {
+            show: true
+        }
+    })
+</script>

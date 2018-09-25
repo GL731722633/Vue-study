@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <child>
+            <template slot-scope="items">
+                <li>{{items.item}}</li>
+            </template>
+        </child>
+    </div>
+</body>
+</html>
+
+<script>
+    Vue.component("child",{
+        data: function () {
+            return {
+                list: [
+                    '作用域插槽的使步骤：',
+                    '在子组件中创建slot插槽',
+                    '循环并绑定值',
+                    '在父组件中用template模板调用',
+                    '在template模板中使用slot-scope="data"来调用',
+                    '用html标签加插值表达式来展示data.*'
+                ]
+            }
+        },
+        template: `<ul>
+                        <slot
+                            v-for="item of list"
+                            :item="item"
+                        ></slot>
+                    </ul>`
+    });
+
+    var vm = new Vue({
+        el: "#root"
+    })
+</script>

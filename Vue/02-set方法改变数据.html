@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的set方法</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<ul id="app">
+    <li v-for="(item,key,index) of userInfo"
+        :key="index">
+        {{item}}----{{key}}----{{index}}
+    </li>
+</ul>
+
+</body>
+</html>
+
+<script>
+    /*两种改变数据方法
+    * Vue.set(vm.userInfo,"age",25)
+    * vm.$set(vm.userInfo,"age",24)
+    *
+    * */
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            userInfo: {
+                name: "GL",
+                age: 24,
+                address: "Wu Han"
+            }
+        }
+    })
+</script>

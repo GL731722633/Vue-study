@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue列表渲染</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<ul id="list">
+    <li v-for="(item,index) of list"
+        :key="item.id">{{item.text}}---{{index}}</li>
+</ul>
+</body>
+</html>
+
+<script>
+
+    /*vue中支持7种方法使数据改变页面跟着改变
+    * 数组变异方法
+    * push,pop,shift,unshift,splice,sort,revese
+    *
+    */
+
+    var vm = new Vue({
+        el: "#list",
+        data: {
+            list: [
+                {
+                    id: "001",
+                    text: "hello"
+                },
+                {
+                    id: "002",
+                    text: "nice"
+                },
+                {
+                    id: "003",
+                    text: "to"
+                },
+                {
+                    id: "004",
+                    text: "meet"
+                },
+                {
+                    id: "005",
+                    text: "you"
+                }
+            ]
+        }
+    })
+</script>

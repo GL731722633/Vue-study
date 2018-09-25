@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-once指令</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <temp1 v-if="type === 'temp1'"></temp1>
+        <temp2 v-if="type === 'temp2'"></temp2>
+        <button @click="handleClick">切换显示</button>
+    </div>
+
+</body>
+</html>
+
+<script>
+    Vue.component("temp1",{
+        template: `<div v-once>第一个组件</div>`
+    })
+
+    Vue.component("temp2",{
+        template: `<div v-once>第二个组件</div>`
+    })
+
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            type: 'temp1'
+        },
+        methods: {
+            handleClick() {
+                this.type = this.type === "temp1" ? "temp2" : "temp1"
+            }
+        }
+    })
+</script>

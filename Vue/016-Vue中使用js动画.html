@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中CSS动画原理</title>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="animate/animate.css">
+</head>
+<body>
+    <div id="root">
+        <transition
+            @before-enter="handleBeforeEnter"
+            @enter="handleEnter"
+            @after-enter="handleAfterEnter"
+        >
+            <p v-show="show">过渡动画显示与隐藏</p>
+        </transition>
+        <button @click="handleClick">Toggle</button>
+    </div>
+</body>
+</html>
+
+<script>
+    var vm = new Vue({
+        el: "#root",
+        data: {
+            show: true
+        },
+        methods: {
+            handleClick() {
+                this.show = !this.show;
+            },
+            handleBeforeEnter(el) {
+                el.style.color= "#f40"
+            },
+            handleEnter(el, done) {
+                setTimeout(() => {
+                    el.style.color = "green"
+                }, 2000)
+
+                setTimeout(() => {
+                    done()
+                },4000)
+            },
+            handleAfterEnter(el) {
+                el.style.color = "#000"
+            }
+        }
+    })
+</script>

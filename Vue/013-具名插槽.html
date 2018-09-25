@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <base-layout>
+            <template slot="header">
+                <h1>这是name='header'的插槽</h1>
+            </template>
+
+            <button type="submit">默认值插槽</button>
+
+            <template slot="footer">
+                <p>这是name='footer'的插槽</p>
+            </template>
+        </base-layout>
+    </div>
+</body>
+</html>
+
+<script>
+    Vue.component("base-layout",{
+        template: `<div class="container">
+                      <header>
+                        <slot name="header"></slot>
+                      </header>
+                      <main>
+                        <slot></slot>
+                      </main>
+                      <footer>
+                        <slot name="footer"></slot>
+                      </footer>
+                  </div>`
+    });
+
+    var vm = new Vue({
+        el: "#root"
+    })
+</script>
