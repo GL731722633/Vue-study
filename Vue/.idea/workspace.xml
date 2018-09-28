@@ -14,22 +14,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="018-Vue中多个元素过渡.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/018-Vue中多个元素过渡.html">
+      <file leaf-file-name="020-Vue中列表排序过渡.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/020-Vue中列表排序过渡.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="34" column="22" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="72" />
+            <state relative-caret-position="205">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="09-给组件绑定原生事件.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/09-给组件绑定原生事件.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>randomIndex</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/018-Vue中多个元素过渡.html" />
         <option value="$PROJECT_DIR$/017-Vue中使用velocity动画.html" />
+        <option value="$PROJECT_DIR$/018-Vue中多个元素过渡.html" />
+        <option value="$PROJECT_DIR$/019-Vue中列表进入离开过渡.html" />
+        <option value="$PROJECT_DIR$/020-Vue中列表排序过渡.html" />
       </list>
     </option>
   </component>
@@ -59,7 +75,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,12 +86,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/工作任务/gaoliao/FWS-实训工位B型/02-综合实训/06-智能安防及智能门禁系统/AccessControl-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
@@ -87,6 +103,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\web前端\Vue-study\Vue" />
       <recent name="F:\web前端\Vue" />
     </key>
   </component>
@@ -116,11 +133,13 @@
       <workItem from="1537501788548" duration="2729000" />
       <workItem from="1537516071466" duration="5605000" />
       <workItem from="1537836026276" duration="9516000" />
+      <workItem from="1538009433713" duration="11266000" />
+      <workItem from="1538095211998" duration="7608000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17850000" />
+    <option name="totallyTimeSpent" value="36724000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -132,9 +151,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19957687" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19605078" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4992948" weight="0.32882273" />
       <window_info anchor="bottom" id="调试" order="7" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -144,7 +164,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4992948" weight="0.32882273" />
       <window_info anchor="bottom" id="运行" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="找到" />
+      <window_info anchor="bottom" id="找到" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -163,6 +183,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/020-Vue中列表排序过渡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/018-Vue中多个元素过渡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="22" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/018-Vue中多个元素过渡.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="902">
@@ -212,11 +246,6 @@
         <state relative-caret-position="-176" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09-给组件绑定原生事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/010-非父子组件之间的传值.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-565" />
@@ -248,15 +277,32 @@
         <state relative-caret-position="-264" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25696" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../package-lock.json" />
     <entry file="file://$PROJECT_DIR$/018-Vue中多个元素过渡.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" column="22" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="72" />
+        <state relative-caret-position="946">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/019-Vue中列表进入离开过渡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09-给组件绑定原生事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/020-Vue中列表排序过渡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="44" />
         </state>
       </provider>
     </entry>
